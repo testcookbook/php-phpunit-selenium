@@ -4,7 +4,7 @@ php:
 before_script:
   - "export DISPLAY=:99.0"
   - "sh -e /etc/init.d/xvfb start"
-  - "wget http://selenium.googlecode.com/files/selenium-server-standalone-2.53.1.jar"
+  - "wget https://selenium-release.storage.googleapis.com/2.53/selenium-server-standalone-2.53.1.jar"
   - "curl -sS https://getcomposer.org/installer | php"  
   - sleep 3 # give xvfb some time to start
 install:
