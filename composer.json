@@ -1,0 +1,13 @@
+{
+    "name": "testcookbook/testphp",
+    "require-dev": {
+        "phpunit/phpunit": "^5.5",
+	"facebook/webdriver": "dev-master"
+    },
+    "authors": [
+        {
+            "name": "Ben Harrington",
+            "email": "ben@harringtonweb.com"
+        }
+    ]
+}
