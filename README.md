@@ -1,5 +1,7 @@
 #phpunit-selenium
 
+[![Build Status](https://travis-ci.org/testcookbook/php-phpunit-selenium.svg?branch=master)](https://travis-ci.org/testcookbook/php-phpunit-selenium)
+
 ##Setup
 ```bash
 #install composer
