@@ -11,8 +11,8 @@ curl -sS https://getcomposer.org/installer | php
 php composer.phar install
 
 #start selenium server
-java -jar selenium-server.jar
+vendor/bin/selenium-server-standalone
 
 #run
-/vendor/bin/phpunit test.php
+vendor/bin/phpunit test.php
 ```
