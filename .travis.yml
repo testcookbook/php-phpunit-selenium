@@ -8,7 +8,7 @@ before_script:
   - "curl -sS https://getcomposer.org/installer | php"  
   - sleep 3 # give xvfb some time to start
 install:
-  - "php composer.phar install"
+  - "composer install"
 script: 
   - "java -jar selenium-server-standalone-2.53.2.jar &"
   - "vendor/bin/phpunit test.php"
