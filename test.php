@@ -5,8 +5,12 @@ class GoogleTest extends PHPUnit_Framework_TestCase {
 
   public function setUp()
   {
+    $user = getenv("SAUCEUSER");
+    $key = getenv("SAUCEKEY");
+    $url = "https://{$user}:{$key}@ondemand.saucelabs.com:443/wd/hub";
+    
     $capabilities = array(\WebDriverCapabilityType::BROWSER_NAME => 'firefox');
-    $this->webDriver = RemoteWebDriver::create('http://localhost:4444/wd/hub', $capabilities);
+    $this->webDriver = RemoteWebDriver::create($url, $capabilities);
   }
 
   public function tearDown()
