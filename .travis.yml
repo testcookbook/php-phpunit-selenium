@@ -1,10 +1,11 @@
 language: php
 php:
   - 7.0
-before_script:
-  - "export DISPLAY=:99.0"
-  - "sh -e /etc/init.d/xvfb start"
-  - sleep 3 # give xvfb some time to start
+env:
+  global:
+    - MOZ_HEADLESS=1
+addons:
+  firefox: latest
 install:
   - "composer install"
 script: 
